@@ -1,31 +1,25 @@
-//{{NO_DEPENDENCIES}}
-// Microsoft Visual C++ø°º≠ ª˝º∫«— ∆˜«‘ ∆ƒ¿œ¿‘¥œ¥Ÿ.
-// Multiple-Image-Editor.rcø°º≠ ªÁøÎµ«∞Ì ¿÷Ω¿¥œ¥Ÿ.
+Ôªø//{{NO_DEPENDENCIES}}
+// Microsoft Visual C++ÏóêÏÑú ÏÉùÏÑ±Ìïú Ìè¨Ìï® ÌååÏùºÏûÖÎãàÎã§.
+// MultipleImageEditor.rcÏóêÏÑú ÏÇ¨Ïö©ÎêòÍ≥† ÏûàÏäµÎãàÎã§.
 //
-#define IDC_MYICON                      2
-#define IDOK2                           2
-#define IDVISIT_WEBSITE                 2
+#define IDM_ABOUTBOX                    0x0010
+#define IDD_ABOUTBOX                    100
+#define IDS_ABOUTBOX                    101
 #define IDD_MULTIPLEIMAGEEDITOR_DIALOG  102
-#define IDS_APP_TITLE                   103
-#define IDD_ABOUTBOX                    103
-#define IDM_ABOUT                       104
-#define IDM_EXIT                        105
-#define IDI_MULTIPLEIMAGEEDITOR         107
-#define IDI_SMALL                       108
-#define IDC_MULTIPLEIMAGEEDITOR         109
 #define IDR_MAINFRAME                   128
-#define IDD_DIALOG1                     129
-#define IDC_BUTTON1                     1000
-#define IDC_STATIC                      -1
+#define IDD_CHANGE_NAME_DIALOG          131
+#define IDC_CHANGE_NAME_BTN             1000
+#define IDC_CHANGE_EXTENSION_BTN        1001
+#define IDC_CHANGE_SIZE_BTN             1002
+#define IDC_VISIT_WEBSITE_BTN           1003
 
 // Next default values for new objects
 // 
 #ifdef APSTUDIO_INVOKED
 #ifndef APSTUDIO_READONLY_SYMBOLS
-#define _APS_NO_MFC                     1
-#define _APS_NEXT_RESOURCE_VALUE        130
+#define _APS_NEXT_RESOURCE_VALUE        133
 #define _APS_NEXT_COMMAND_VALUE         32771
 #define _APS_NEXT_CONTROL_VALUE         1001
-#define _APS_NEXT_SYMED_VALUE           110
+#define _APS_NEXT_SYMED_VALUE           101
 #endif
 #endif
