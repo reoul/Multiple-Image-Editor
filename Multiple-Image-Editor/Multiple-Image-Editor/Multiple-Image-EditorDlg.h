@@ -34,4 +34,5 @@ protected:
 public:
 	afx_msg void OnBnClickedChangeNameBtn();
 	afx_msg void OnBnClickedVisitWebsiteBtn();
+	afx_msg void OnBnClickedChangeExtensionBtn();
 };

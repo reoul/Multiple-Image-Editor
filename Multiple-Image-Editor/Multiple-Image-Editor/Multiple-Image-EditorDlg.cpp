@@ -7,6 +7,7 @@
 #include "Multiple-Image-Editor.h"
 #include "Multiple-Image-EditorDlg.h"
 #include "CChangeNameDlg.h"
+#include "CChangeExtensionDlg.h"
 #include "afxdialogex.h"
 
 #ifdef _DEBUG
@@ -68,6 +69,7 @@ BEGIN_MESSAGE_MAP(CMultipleImageEditorDlg, CDialogEx)
 	ON_WM_QUERYDRAGICON()
 	ON_BN_CLICKED(IDC_CHANGE_NAME_BTN, &CMultipleImageEditorDlg::OnBnClickedChangeNameBtn)
 	ON_BN_CLICKED(IDC_VISIT_WEBSITE_BTN, &CMultipleImageEditorDlg::OnBnClickedVisitWebsiteBtn)
+	ON_BN_CLICKED(IDC_CHANGE_EXTENSION_BTN, &CMultipleImageEditorDlg::OnBnClickedChangeExtensionBtn)
 END_MESSAGE_MAP()
 
 
@@ -166,7 +168,6 @@ HCURSOR CMultipleImageEditorDlg::OnQueryDragIcon()
  */
 void CMultipleImageEditorDlg::OnBnClickedChangeNameBtn()
 {
-	// TODO: 여기에 컨트롤 알림 처리기 코드를 추가합니다.
 	CChangeNameDlg dlgChangeName;
 	dlgChangeName.EnableDynamicLayout(TRUE);
 	dlgChangeName.DoModal();
@@ -179,4 +180,12 @@ void CMultipleImageEditorDlg::OnBnClickedChangeNameBtn()
 void CMultipleImageEditorDlg::OnBnClickedVisitWebsiteBtn()
 {
 	ShellExecute(this->m_hWnd, TEXT("open"), TEXT("IEXPLORE.EXE"), TEXT(" https://github.com/reoul/Multiple-Image-Editor "), NULL, SW_SHOW);
+}
+
+
+void CMultipleImageEditorDlg::OnBnClickedChangeExtensionBtn()
+{
+	CChangeExtensionDlg dlgChangeExtension;
+	dlgChangeExtension.EnableDynamicLayout(TRUE);
+	dlgChangeExtension.DoModal();
 }

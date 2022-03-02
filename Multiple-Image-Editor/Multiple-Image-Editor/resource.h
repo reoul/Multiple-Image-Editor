@@ -22,7 +22,6 @@
 #define IDC_MOVE_UP_BUTTON              1006
 #define IDC_CHANGE_PNG_BUTTON           1007
 #define IDC_CHANGE_APPLY_BUTTON         1008
-#define IDC_CHANGE_TIFF_BUTTON2         1008
 #define IDC_CHANGE_TIFF_BUTTON          1008
 #define IDC_HELPBUTTON                  1009
 #define IDC_CHANGE_BMP_BUTTON           1009

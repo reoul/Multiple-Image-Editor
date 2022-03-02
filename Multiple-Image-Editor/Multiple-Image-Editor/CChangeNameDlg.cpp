@@ -32,7 +32,6 @@ void CChangeNameDlg::DoDataExchange(CDataExchange* pDX)
 {
 	CDialogEx::DoDataExchange(pDX);
 	DDX_Control(pDX, IDC_LIST1, m_NameDialogFileListView);
-	//  DDX_Control(pDX, IDC_EDIT1, m_FileNameEdit);
 	DDX_Text(pDX, IDC_EDIT1, m_FileNameEdit);
 	DDV_MaxChars(pDX, m_FileNameEdit, 100);
 	GetDlgItem(IDC_CHANGE_APPLY_BUTTON)->EnableWindow(FALSE);
@@ -62,7 +61,6 @@ END_MESSAGE_MAP()
  */
 void CChangeNameDlg::OnDropFiles(HDROP hDropInfo)
 {
-	// TODO: 여기에 메시지 처리기 코드를 추가 및/또는 기본값을 호출합니다.
 	TCHAR FileName[MAX_PATH] = { 0, };
 	UINT count = DragQueryFile(hDropInfo, 0xFFFFFFFF, FileName, MAX_PATH);
 

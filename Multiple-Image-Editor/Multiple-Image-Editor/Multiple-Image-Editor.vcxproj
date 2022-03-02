@@ -187,6 +187,7 @@
   <ItemGroup>
     <ClInclude Include="CChangeExtensionDlg.h" />
     <ClInclude Include="CChangeNameDlg.h" />
+    <ClInclude Include="CFileManager.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="Multiple-Image-Editor.h" />
     <ClInclude Include="Multiple-Image-EditorDlg.h" />
@@ -197,6 +198,7 @@
   <ItemGroup>
     <ClCompile Include="CChangeExtensionDlg.cpp" />
     <ClCompile Include="CChangeNameDlg.cpp" />
+    <ClCompile Include="CFileManager.cpp" />
     <ClCompile Include="Multiple-Image-Editor.cpp" />
     <ClCompile Include="Multiple-Image-EditorDlg.cpp" />
     <ClCompile Include="pch.cpp">
