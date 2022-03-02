@@ -10,8 +10,17 @@
 #define IDD_CHANGE_NAME_DIALOG          131
 #define IDC_CHANGE_NAME_BTN             1000
 #define IDC_CHANGE_EXTENSION_BTN        1001
+#define IDC_LIST1                       1001
 #define IDC_CHANGE_SIZE_BTN             1002
+#define IDC_EDIT1                       1002
+#define IDC_NAME_EDIT                   1002
 #define IDC_VISIT_WEBSITE_BTN           1003
+#define IDC_SELECT_DELECT_BUTTON        1003
+#define IDC_ALL_RESET_BUTTON            1004
+#define IDC_MOVE_DOWN_BUTTON            1005
+#define IDC_MOVE_UP_BUTTON              1006
+#define IDC_CHANGE_APPLY_BUTTON         1008
+#define IDC_HELPBUTTON                  1009
 
 // Next default values for new objects
 // 
@@ -19,7 +28,7 @@
 #ifndef APSTUDIO_READONLY_SYMBOLS
 #define _APS_NEXT_RESOURCE_VALUE        133
 #define _APS_NEXT_COMMAND_VALUE         32771
-#define _APS_NEXT_CONTROL_VALUE         1001
+#define _APS_NEXT_CONTROL_VALUE         1004
 #define _APS_NEXT_SYMED_VALUE           101
 #endif
 #endif

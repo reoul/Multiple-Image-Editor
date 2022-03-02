@@ -6,6 +6,7 @@
 #include "framework.h"
 #include "Multiple-Image-Editor.h"
 #include "Multiple-Image-EditorDlg.h"
+#include "CChangeNameDlg.h"
 #include "afxdialogex.h"
 
 #ifdef _DEBUG
@@ -66,6 +67,7 @@ BEGIN_MESSAGE_MAP(CMultipleImageEditorDlg, CDialogEx)
 	ON_WM_PAINT()
 	ON_WM_QUERYDRAGICON()
 	ON_BN_CLICKED(IDC_CHANGE_NAME_BTN, &CMultipleImageEditorDlg::OnBnClickedChangeNameBtn)
+	ON_BN_CLICKED(IDC_VISIT_WEBSITE_BTN, &CMultipleImageEditorDlg::OnBnClickedVisitWebsiteBtn)
 END_MESSAGE_MAP()
 
 
@@ -101,6 +103,10 @@ BOOL CMultipleImageEditorDlg::OnInitDialog()
 	SetIcon(m_hIcon, FALSE);		// 작은 아이콘을 설정합니다.
 
 	// TODO: 여기에 추가 초기화 작업을 추가합니다.
+	ChangeWindowMessageFilter(0x0049, MSGFLT_ADD);
+	ChangeWindowMessageFilter(WM_DROPFILES, MSGFLT_ADD);
+
+	DragAcceptFiles();
 
 	return TRUE;  // 포커스를 컨트롤에 설정하지 않으면 TRUE를 반환합니다.
 }
@@ -155,9 +161,22 @@ HCURSOR CMultipleImageEditorDlg::OnQueryDragIcon()
 }
 
 
-
+/**
+ * \brief 이름 바꾸는 다이알로그
+ */
 void CMultipleImageEditorDlg::OnBnClickedChangeNameBtn()
 {
 	// TODO: 여기에 컨트롤 알림 처리기 코드를 추가합니다.
-	
+	CChangeNameDlg dlgChangeName;
+	dlgChangeName.EnableDynamicLayout(TRUE);
+	dlgChangeName.DoModal();
+}
+
+
+/**
+ * \brief 제작자 웹사이트 방문
+ */
+void CMultipleImageEditorDlg::OnBnClickedVisitWebsiteBtn()
+{
+	ShellExecute(this->m_hWnd, TEXT("open"), TEXT("IEXPLORE.EXE"), TEXT(" https://github.com/reoul/Multiple-Image-Editor "), NULL, SW_SHOW);
 }

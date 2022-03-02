@@ -96,6 +96,7 @@
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
     </Link>
     <Midl>
       <MkTypLibCompatible>false</MkTypLibCompatible>
@@ -170,6 +171,7 @@
       <SubSystem>Windows</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
     </Link>
     <Midl>
       <MkTypLibCompatible>false</MkTypLibCompatible>
@@ -183,6 +185,7 @@
     </ResourceCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="CChangeNameDlg.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="Multiple-Image-Editor.h" />
     <ClInclude Include="Multiple-Image-EditorDlg.h" />
@@ -191,6 +194,7 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="CChangeNameDlg.cpp" />
     <ClCompile Include="Multiple-Image-Editor.cpp" />
     <ClCompile Include="Multiple-Image-EditorDlg.cpp" />
     <ClCompile Include="pch.cpp">
