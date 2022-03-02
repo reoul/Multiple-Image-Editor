@@ -139,7 +139,6 @@ void CChangeNameDlg::SelectDelect()
 	CheckAbleChangeName();
 }
 
-
 void CChangeNameDlg::AllDelect()
 {
 	m_NameDialogFileListView.ResetContent();
@@ -252,7 +251,7 @@ void CChangeNameDlg::OnBnClickedChangeApplyButton()
 
 		wchar_t m_intToStr[256];
 		swprintf_s(m_intToStr, L"%d", i);
-		
+
 		newName.Replace(p_str, m_intToStr);
 
 		FileReName(oldName, newName);
@@ -270,7 +269,7 @@ void CChangeNameDlg::OnBnClickedChangeApplyButton()
  */
 void CChangeNameDlg::OnBnClickedHelpButton()
 {
-	MessageBox(L"예시) 강아지이미지{num}번\n결과값\n강아지이미지1번\n강아지이미지2번\n강아지이미지3번\n강아지이미지4번", L"도움말", MB_OK);
+	MessageBox(L"예시) 강아지이미지{num}번\n결과값\n강아지이미지0번\n강아지이미지1번\n강아지이미지2번\n강아지이미지3번", L"도움말", MB_OK);
 }
 
 
@@ -304,7 +303,7 @@ void CChangeNameDlg::OnEnChangeNameEdit()
 				m_NameEdit.GetSel(start, end);
 				nameEditText.Remove(*cancelKeyword[i]);
 				m_NameEdit.SetWindowTextW(nameEditText);
-				m_NameEdit.SetSel(start-1, end-1);
+				m_NameEdit.SetSel(start - 1, end - 1);
 				break;
 			}
 		}
